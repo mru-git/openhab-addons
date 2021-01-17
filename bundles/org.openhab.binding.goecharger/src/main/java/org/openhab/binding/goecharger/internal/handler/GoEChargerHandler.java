@@ -33,6 +33,16 @@ import static org.openhab.binding.goecharger.internal.GoEChargerBindingConstants
 import static org.openhab.binding.goecharger.internal.GoEChargerBindingConstants.VOLTAGE_L1;
 import static org.openhab.binding.goecharger.internal.GoEChargerBindingConstants.VOLTAGE_L2;
 import static org.openhab.binding.goecharger.internal.GoEChargerBindingConstants.VOLTAGE_L3;
+import static org.openhab.binding.goecharger.internal.GoEChargerBindingConstants.RF_01_CHARGE_CONSUMPTION;
+import static org.openhab.binding.goecharger.internal.GoEChargerBindingConstants.RF_02_CHARGE_CONSUMPTION;
+import static org.openhab.binding.goecharger.internal.GoEChargerBindingConstants.RF_03_CHARGE_CONSUMPTION;
+import static org.openhab.binding.goecharger.internal.GoEChargerBindingConstants.RF_04_CHARGE_CONSUMPTION;
+import static org.openhab.binding.goecharger.internal.GoEChargerBindingConstants.RF_05_CHARGE_CONSUMPTION;
+import static org.openhab.binding.goecharger.internal.GoEChargerBindingConstants.RF_06_CHARGE_CONSUMPTION;
+import static org.openhab.binding.goecharger.internal.GoEChargerBindingConstants.RF_07_CHARGE_CONSUMPTION;
+import static org.openhab.binding.goecharger.internal.GoEChargerBindingConstants.RF_08_CHARGE_CONSUMPTION;
+import static org.openhab.binding.goecharger.internal.GoEChargerBindingConstants.RF_09_CHARGE_CONSUMPTION;
+import static org.openhab.binding.goecharger.internal.GoEChargerBindingConstants.RF_10_CHARGE_CONSUMPTION;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -220,6 +230,56 @@ public class GoEChargerHandler extends BaseThingHandler {
                     return UnDefType.UNDEF;
                 }
                 return new QuantityType<>((Double) (goeResponse.totalChargeConsumption / 10d), Units.KILOWATT_HOUR);
+            case RF_01_CHARGE_CONSUMPTION:
+                if (goeResponse.rf01ChargeConsumption == null) {
+                    return UnDefType.UNDEF;
+                }
+                return new QuantityType<>((Double) (goeResponse.rf01ChargeConsumption / 10d), Units.KILOWATT_HOUR);
+            case RF_02_CHARGE_CONSUMPTION:
+                if (goeResponse.rf02ChargeConsumption == null) {
+                    return UnDefType.UNDEF;
+                }
+                return new QuantityType<>((Double) (goeResponse.rf02ChargeConsumption / 10d), Units.KILOWATT_HOUR);
+            case RF_03_CHARGE_CONSUMPTION:
+                if (goeResponse.rf03ChargeConsumption == null) {
+                    return UnDefType.UNDEF;
+                }
+                return new QuantityType<>((Double) (goeResponse.rf03ChargeConsumption / 10d), Units.KILOWATT_HOUR);
+            case RF_04_CHARGE_CONSUMPTION:
+                if (goeResponse.rf04ChargeConsumption == null) {
+                    return UnDefType.UNDEF;
+                }
+                return new QuantityType<>((Double) (goeResponse.rf04ChargeConsumption / 10d), Units.KILOWATT_HOUR);
+            case RF_05_CHARGE_CONSUMPTION:
+                if (goeResponse.rf05ChargeConsumption == null) {
+                    return UnDefType.UNDEF;
+                }
+                return new QuantityType<>((Double) (goeResponse.rf05ChargeConsumption / 10d), Units.KILOWATT_HOUR);
+            case RF_06_CHARGE_CONSUMPTION:
+                if (goeResponse.rf06ChargeConsumption == null) {
+                    return UnDefType.UNDEF;
+                }
+                return new QuantityType<>((Double) (goeResponse.rf06ChargeConsumption / 10d), Units.KILOWATT_HOUR);
+            case RF_07_CHARGE_CONSUMPTION:
+                if (goeResponse.rf07ChargeConsumption == null) {
+                    return UnDefType.UNDEF;
+                }
+                return new QuantityType<>((Double) (goeResponse.rf07ChargeConsumption / 10d), Units.KILOWATT_HOUR);
+            case RF_08_CHARGE_CONSUMPTION:
+                if (goeResponse.rf08ChargeConsumption == null) {
+                    return UnDefType.UNDEF;
+                }
+                return new QuantityType<>((Double) (goeResponse.rf08ChargeConsumption / 10d), Units.KILOWATT_HOUR);
+            case RF_09_CHARGE_CONSUMPTION:
+                if (goeResponse.rf09ChargeConsumption == null) {
+                    return UnDefType.UNDEF;
+                }
+                return new QuantityType<>((Double) (goeResponse.rf09ChargeConsumption / 10d), Units.KILOWATT_HOUR);
+            case RF_10_CHARGE_CONSUMPTION:
+                if (goeResponse.rf10ChargeConsumption == null) {
+                    return UnDefType.UNDEF;
+                }
+                return new QuantityType<>((Double) (goeResponse.rf10ChargeConsumption / 10d), Units.KILOWATT_HOUR);
             case FIRMWARE:
                 if (goeResponse.firmware == null) {
                     return UnDefType.UNDEF;
