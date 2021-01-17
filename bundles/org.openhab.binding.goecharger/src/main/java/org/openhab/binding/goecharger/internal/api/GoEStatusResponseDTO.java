@@ -62,4 +62,34 @@ public class GoEStatusResponseDTO {
 
     @SerializedName("fwv")
     public String firmware;
+    
+    @SerializedName("eca")
+    public Long rf01ChargeConsumption;
+    
+    @SerializedName("ecr")
+    public Long rf02ChargeConsumption;
+    
+    @SerializedName("ecd")
+    public Long rf03ChargeConsumption;
+    
+    @SerializedName("ec4")
+    public Long rf04ChargeConsumption;
+    
+    @SerializedName("ec5")
+    public Long rf05ChargeConsumption;
+    
+    @SerializedName("ec6")
+    public Long rf06ChargeConsumption;
+    
+    @SerializedName("ec7")
+    public Long rf07ChargeConsumption;
+    
+    @SerializedName("ec8")
+    public Long rf08ChargeConsumption;
+    
+    @SerializedName("ec9")
+    public Long rf09ChargeConsumption;
+    
+    @SerializedName("ec1")
+    public Long rf10ChargeConsumption;
 }
