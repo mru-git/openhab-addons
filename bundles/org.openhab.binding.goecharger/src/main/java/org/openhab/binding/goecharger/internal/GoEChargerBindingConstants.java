@@ -51,7 +51,17 @@ public class GoEChargerBindingConstants {
     public static final String SESSION_CHARGE_CONSUMPTION_LIMIT = "sessionChargeEnergyLimit";
     public static final String TOTAL_CONSUMPTION = "totalChargedEnergy";
     public static final String FIRMWARE = "firmware";
-
+    public static final String RF_01_CHARGE_CONSUMPTION = "rf01ChargedEnergy";
+    public static final String RF_02_CHARGE_CONSUMPTION = "rf02ChargedEnergy";
+    public static final String RF_03_CHARGE_CONSUMPTION = "rf03ChargedEnergy";
+    public static final String RF_04_CHARGE_CONSUMPTION = "rf04ChargedEnergy";
+    public static final String RF_05_CHARGE_CONSUMPTION = "rf05ChargedEnergy";
+    public static final String RF_06_CHARGE_CONSUMPTION = "rf06ChargedEnergy";
+    public static final String RF_07_CHARGE_CONSUMPTION = "rf07ChargedEnergy";
+    public static final String RF_08_CHARGE_CONSUMPTION = "rf08ChargedEnergy";
+    public static final String RF_09_CHARGE_CONSUMPTION = "rf09ChargedEnergy";
+    public static final String RF_10_CHARGE_CONSUMPTION = "rf10ChargedEnergy";
+    
     public static final String API_URL = "http://%IP%/status";
     public static final String MQTT_URL = "http://%IP%/mqtt?payload=%KEY%=%VALUE%";
 }
